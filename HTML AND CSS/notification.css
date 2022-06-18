@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/* Basic Resttings */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  background-color: #1c1c1e;
+}
+
+.container {
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  background-color: #1c1c1e;
+  color: #fff;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  background-color: #30d158;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.name {
+  margin-left: 0.5rem;
+}
+.status {
+  margin-left: auto;
+}
