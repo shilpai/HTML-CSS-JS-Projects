@@ -1,0 +1,51 @@
+.container{
+    background-color: blue;
+    height: 700px;
+    /* width: 900px; */
+    display: grid;
+    /* grid-template-columns: 133px 133px 133px;
+    grid-template-rows:133px 133px 133px ; */
+    /* grid-template-columns: repeat(3, ifr);
+    grid-template-rows: repeat(3, ifr); */
+    /* // 1fr - one fraction of the entire widhth available */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 143PX 1fr 43px;
+    row-gap: 12px;
+    column-gap: 12px;
+   /* //justify-items works on grid containers */
+   /* // for horizontally align use justify */
+
+   /* justify-items: center; */
+
+   /* // for vertivally align use align-items: ; */
+
+   /* align-items: center; */
+
+   place-items: center;
+}
+.item{
+    background-color: brown;
+    height:122px ;
+    width:122px ; 
+}
+.item1{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* // above term also write like a below term */
+    grid-column: 1 / span 3;
+    background-color: black;
+    color: azure;
+    width: 100vw;
+}
+.item2{
+    /* //justify-self works on grid items */
+    justify-self:center; 
+    /* // align-self use for grid items  */
+    /* align-self: center; */
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: black;
+    width: 100vw;
+}
