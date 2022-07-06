@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  /* background-color: #ddd6fe; */
+  height: 3000px;
+}
+.work-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+.heading h2{
+  font-size: 1.8rem;
+}
+.heading span{
+  display: inline-block;
+  margin: .25rem 0 1rem 0;
+  width: 6rem;
+  height: 0.25rem;
+  background-color: #ff725e;
+}
+.heading p{
+  line-height: 1.625;
+}
+@media screen and (min-width: 1024px){
+  .heading p{
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.project{
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  margin-top: 1rem;
+  gap: 1rem;
+  width: 100%;
+}
+@media screen and (min-width: 640px){
+  .project{
+   grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px){
+  .project{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.profile{
+  position: relative;
+}
+.profile img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+  object-fit: cover;
+  object-position: center;
+}
+.desc{
+  position: relative;
+  
+  padding: 2.5rem;
+  z-index: 1;
+  background-color: #263238;
+  color: #fff;
+  
+  opacity: 0;
+}
+.desc p{
+  margin-top: .5rem;
+}
+
+.desc:hover{
+  opacity: 100%;
+}
+
+
