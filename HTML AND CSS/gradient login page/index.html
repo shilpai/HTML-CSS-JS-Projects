@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Gradient Tilted Border Login Page</title>
+       <style>
+        @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+*
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+  font-family: "Abel", sans-serif;
+}
+.wrapper {
+  max-width: 300px;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.container {
+  position: relative;
+  border-radius: 5px;
+  background: #121212;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: conic-gradient(transparent 20%,
+                    blue 25% 52%,
+                    transparent 53% 70%,
+                    red 75%); */
+  background: #dd2476;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4a00e0, #dd2476);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4a00e0, #dd2476);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: inherit;
+  z-index: -1;
+  transform: skewX(3deg) rotate(2deg);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  display: block;
+  background: #dd2476;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4a00e0, #dd2476);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4a00e0, #dd2476);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 0.3rem;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+.password {
+  margin-top: 0.75rem;
+  display: block;
+}
+
+.login-btn {
+  display: block;
+  margin-top: 1.2rem;
+  text-decoration: none;
+  background: #dd2476;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4a00e0, #dd2476);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4a00e0, #dd2476);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 6px 16px;
+  outline: 0;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+  width: 100%;
+  border: 0;
+  transition: box-shadow 0.2s;
+}
+
+.forget {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.click {
+  color: #dd2476;
+}
+
+.facebook {
+  margin: 1.25rem auto 1rem auto;
+}
+
+.facebook,
+.twitter {
+  text-decoration: none;
+  display: block;
+  width: 90%;
+  border: 2px solid #333;
+  padding: 4px 8px;
+  border-radius: 2rem;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.twitter {
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-right: 0.2rem;
+  font-size: 0.8rem;
+  color: black;
+}
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+          <div class="form">
+            <h2>Login</h2>
+            <form>
+              <label for="login">Username</label>
+              <input type="text" id="login" />
+              <label class="password" for="password">Password</label>
+              <input type="password" id="password" />
+              <a href="#" class="login-btn">Sign In</a>
+              <p class="forget">Forget password? <a href="#" class="click">Click Here</a></p>
+            </form>
+            <a href="#" class="facebook"><span class="icon"><i class="fa fa-facebook-f"></i></span> Signin with facebook</a>
+            <a href="#" class="twitter"><span class="icon"><i class="fa fa-twitter"></i></span> Signin with Twitter</a>
+          </div>
+        </div>
+      </div>
+     </body>
+</html>
