@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Dropdown.css">
+  </head>
+  <body>
+    <div class="container">
+        <button class="btn" id="btn">
+            Dropdown
+            <i class="bx bx-chevron-down" id="arrow"></i>
+        </button>
+        <div class="dropdown" id="dropdown">
+            <a href="#create">
+                <i class="bx bx-plus-circle"></i>
+                Create New
+              </a>
+              <a href="#draft">
+                <i class="bx bx-book"></i>
+                All Drafts
+              </a>
+              <a href="#move">
+                <i class="bx bx-folder"></i>
+                Move To
+              </a>
+              <a href="#profile">
+                <i class="bx bx-user"></i>
+                Profile Settings
+              </a>
+              <a href="#notification">
+                <i class="bx bx-bell"></i>
+                Notification
+              </a>
+              <a href="#settings">
+                <i class="bx bx-cog"></i>
+                Settings
+              </a>
+        </div>
+    </div>
+    <script src="Dropdown.js"></script>
+  </body>
+</html>
