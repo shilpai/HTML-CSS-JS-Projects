@@ -1,0 +1,20 @@
+table,
+th,
+td {
+  text-align: left;
+  border-collapse: collapse;
+  font-family: sans-serif;
+ 
+}
+th {
+  background-color: #e14d2a;
+  font-weight: 800;
+  padding: 15px;
+}
+td{
+  padding: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
