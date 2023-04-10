@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BFDB38;
+}
+.container{
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 1em;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 3px black;
+    margin-top: 80px;
+    background-color: #2D2727;
+   
+}
+
+h2{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h4{
+    color: #fff;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container .box-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* backdrop-filter: blur(10px); */
+    background-image: url(https://images.pexels.com/photos/168442/pexels-photo-168442.jpeg?auto=compress&cs=tinysrgb&w=600);
+    border-radius: 20px;
+
+    
+}
+
+
+.container .box-container .box{
+    /* border: 2px solid #fff; */
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Finger Paint', cursive;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+
+.box.box:nth-child(3n){
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+}
